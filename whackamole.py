@@ -1,7 +1,7 @@
 import pygame
 import random  # We need the random module to randomly move the mole
 
-print("Hi!")
+
 def main():
     try:
         pygame.init()
