@@ -9,6 +9,7 @@ def main():
         mole_image = pygame.image.load("mole.png")
         screen = pygame.display.set_mode((640, 512))
         clock = pygame.time.Clock()
+        print("Hello")
         running = True
         while running:
             for event in pygame.event.get():
