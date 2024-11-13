@@ -1,5 +1,5 @@
 import pygame
-import random  # We need the random module to randomly move the mole
+import random  # Randomly move the mole
 
 
 def main():
@@ -24,10 +24,10 @@ def main():
         grid_width = 20  # 20 columns in the grid
         grid_height = 16  # 16 rows in the grid
 
-        # Initial position of the mole (top-left corner of the grid)
+        # Initial position of the mole (at top-left corner of the grid)
         mole_x, mole_y = 0, 0
 
-        # Helper function to draw the grid
+        # Draw the grid
         def draw_grid():
             line_color = (0, 0, 0)  # Color for grid lines (black)
 
@@ -63,13 +63,13 @@ def main():
             # Draw the grid on the screen
             draw_grid()
 
-            # Draw the mole in its current position (based on mole_x and mole_y)
+            # Draw the mole in its current position based on mole_x and mole_y
             screen.blit(mole_image, mole_image.get_rect(topleft=(mole_x * grid_size, mole_y * grid_size)))
 
             # Update the screen display
             pygame.display.flip()
 
-            # Control the frame rate to be 60 frames per second
+            # Control the frame rate to be 60 frames/s
             clock.tick(60)
 
     finally:
